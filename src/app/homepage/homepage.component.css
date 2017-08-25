@@ -1,0 +1,14 @@
+
+body{
+  padding: 5% 18% 0% 18%;
+}
+
+#textbox {
+  width:200px;
+  transition: 0.5s;
+}
+
+#textbox:focus {
+  width:300px;
+  transition: 0.5s;
+}

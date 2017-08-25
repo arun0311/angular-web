@@ -1,0 +1,47 @@
+<app-homepage></app-homepage>
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="false">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content" style="background-color:#084fa7">
+      <div class="modal-header">
+        <h3 class="modal-title" id="exampleModalLabel" style="text-align:center;color:white">Login information</h3>
+        <button class="buttonclose" type="link" >
+          <a href="" >X</a>
+        </button>
+      </div>
+      <div class="modal-body" style="background-color:#084fa7;padding-bottom: 9%;">
+        <div class="jumbotron" style="background-color:#084fa7;border-radius: 2%; width: 80%; color:whitesmoke;margin: 0% 0% 0% 10%;padding: 2% 0% 2% 0%;">
+          <form class="form-inline" #userform class="navbar-form navbar-center" #form1="ngForm" (ngSubmit)="onlogin(form1.value)">
+            <div action="/action_page.php">
+              <div >
+                <img style="border-radius: 50%;width: 40%;margin: 1% 0% 0% 30%;" src="http://www.musik-im-fremdsprachenunterricht.de/babel/images/Icons/team.png" alt="Avatar" class="avatar">
+              </div>
+            </div>
+            <br><br><br>
+            <div class="form-group" class="row" >
+              <label class="col-sm-3" for="username"> Username: </label>
+              <div style="padding: 0% 0% 2% 4%;" class="col-sm-8">
+                <input type="text" name="username" [(ngModel)]="user" #username="ngModel" placeholder="Enter your Username"
+                  class="form-control">
+                <br> </div>
+            </div>
+            <div class="form-group" class="row">
+              <label class="col-sm-3" for="pwd"> Password: </label>
+              <div style="padding: 0% 0% 2% 4%;" class="col-sm-8">
+                <input type="password" name="password" [(ngModel)]="pass" #password="ngModel" placeholder="Enter your Password"
+                  class="form-control">
+                <br></div>
+            </div><br>
+            <div>
+                <a href="/forgotPassword" style="padding-left: 47%;"> forgot password ?</a>
+             </div><br>
+            <div style="margin: 0% 0% 0% 31%;">
+              <button style="padding: 3% 6%;" type="submit" (click)="onlogin()" class="btn btn-primary ">Login</button>
+              <button style="padding: 3% 6%;" type="submit" (click)="onlogin()" class="btn btn-primary ">Sign Up</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

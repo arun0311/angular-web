@@ -1,0 +1,13 @@
+a:focus, a:hover {
+  color: red;
+  text-decoration: underline;
+}
+a{
+  color: whitesmoke;
+}
+.buttonclose{
+  float: right;
+  border-radius: 50%;
+  background: red;
+
+}
